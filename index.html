@@ -147,7 +147,6 @@
     <a href="#faq-section" class="text-2xl font-bold">FAQs</a>
     <a href="https://www.mulapal1.org" class="bg-yellow-400 text-[#005b4e] px-8 py-3 rounded-full font-black">JOIN NOW</a>
 </div>
-
         </div>
     </nav>
 <div id="payout-toast" class="fixed bottom-6 left-6 bg-white shadow-2xl rounded-2xl p-4 flex items-center gap-4 transform translate-y-32 transition-transform duration-700 z-[100] border-l-4 border-green-500 max-w-xs">
@@ -579,6 +578,30 @@
     </div>
     <p class="text-center pt-8 text-[10px] tracking-widest">© 2026 NEXAHELA PROJECT. ALL RIGHTS RESERVED.</p>
 </footer>
+<script>
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const closeBtn = document.getElementById('close-menu');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    // Open Menu
+    menuBtn.onclick = () => {
+        mobileNav.classList.replace('hidden', 'flex');
+        document.body.style.overflow = 'hidden'; // Stop background scroll
+    };
+
+    // Close Menu
+    const hideMenu = () => {
+        mobileNav.classList.replace('flex', 'hidden');
+        document.body.style.overflow = 'auto'; // Enable scroll
+    };
+
+    closeBtn.onclick = hideMenu;
+
+    // Close when clicking a link (So the user actually sees the section)
+    document.querySelectorAll('#mobile-nav a').forEach(link => {
+        link.onclick = hideMenu;
+    });
+</script>
 
 
 </body>
