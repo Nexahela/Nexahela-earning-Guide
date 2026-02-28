@@ -1,0 +1,150 @@
+/* Nexahela 2026 Premium Stylesheet
+  Focus: High-Conversion, Mobile-First, Pan-African Fintech Aesthetic
+*/
+
+:root {
+  --primary-teal: #005b4e;
+  --accent-green: #0e8a76;
+  --success-gold: #facc15;
+  --glass-white: rgba(255, 255, 255, 0.1);
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* 1. Global Reset & Smoothness */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #1a202c;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* 2. Modern Glassmorphism & Gradients */
+.header-glass {
+  background: linear-gradient(135deg, var(--primary-teal) 0%, #003d35 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card {
+  background: var(--glass-white);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.5rem;
+}
+
+/* 3. The "African Flag" Hover States */
+/* Custom borders for country cards */
+.country-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #edf2f7;
+}
+
+.country-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-green);
+  box-shadow: var(--shadow-lg);
+}
+
+/* 4. Optimized Buttons (The "Money" Buttons) */
+.btn-primary {
+  background-color: white;
+  color: var(--primary-teal);
+  padding: 1rem 2.5rem;
+  font-weight: 800;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--success-gold);
+  transform: scale(1.05);
+  box-shadow: 0 20px 25px -5px rgba(250, 204, 21, 0.3);
+}
+
+/* 5. Modern Card Grid Styling */
+.earning-card {
+  background: #ffffff;
+  border-radius: 2rem;
+  padding: 2.5rem;
+  border: 1px solid #f1f5f9;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.earning-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  border-radius: 2rem;
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.earning-card:hover {
+  transform: translateY(-12px);
+}
+
+.earning-card:hover::after {
+  opacity: 1;
+}
+
+/* 6. Floating Animations for Icons */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating-icon {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* 7. Responsive Image Handling */
+.modern-img {
+  border-radius: 2rem;
+  box-shadow: var(--shadow-lg);
+  border: 8px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.modern-img:hover {
+  transform: rotate(-1deg) scale(1.02);
+}
+
+/* 8. Trust-Badge Styling */
+.badge-verified {
+  background: rgba(14, 138, 118, 0.2);
+  color: #4ade80;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* 9. Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-teal);
+  border-radius: 10px;
+}
+
