@@ -83,6 +83,54 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I join Nexahela Agencies in Kenya?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Register via your M-Pesa number, click the join link, and pay the KSH 600 activation fee. Your dashboard unlocks instantly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Nexahela work in Nigeria?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Nexahela works in Nigeria via local bank transfers and OPay. Earnings are paid in Naira (NGN)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I withdraw money in Uganda?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ugandan users can withdraw funds directly to MTN Mobile Money or Airtel Money wallets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Nexahela Agencies legit in Ghana?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nexahela is verified in Ghana, supporting payments via MTN MoMo and Vodafone Cash."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I join from Malawi, Cameroon, or South Africa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Nexahela is Pan-African and supports local mobile money and bank transfers across Malawi, Cameroon, and South Africa."
+      }
+    }
+  ]
+}
+</script>
 
 </head>
 <body class="bg-white">
@@ -414,6 +462,78 @@
         </div>
     </div>
 </section>
+    <section class="py-20 px-6 bg-white" id="faq-section">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-black text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-button text-lg font-bold text-gray-800" onclick="toggleFaq(this)">
+                    <span>How do I join Nexahela Agencies in Kenya?</span>
+                    <i class="fas fa-plus faq-icon text-[#0e8a76]"></i>
+                </button>
+                <div class="faq-answer text-gray-600 text-sm">
+                    In Kenya, registration is via your M-Pesa number. Simply click the join link, enter your details, and pay the KSH 600 activation fee via the STK push or Paybill. Once paid, your dashboard unlocks instantly.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button text-lg font-bold text-gray-800" onclick="toggleFaq(this)">
+                    <span>Does Nexahela work in Nigeria?</span>
+                    <i class="fas fa-plus faq-icon text-[#0e8a76]"></i>
+                </button>
+                <div class="faq-answer text-gray-600 text-sm">
+                    Yes! Nexahela is fully operational in Nigeria. You can register using your local bank account or OPay. Earnings are converted to Naira (NGN), and you can withdraw directly to your Nigerian bank 24/7.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button text-lg font-bold text-gray-800" onclick="toggleFaq(this)">
+                    <span>How do I withdraw money in Uganda?</span>
+                    <i class="fas fa-plus faq-icon text-[#0e8a76]"></i>
+                </button>
+                <div class="faq-answer text-gray-600 text-sm">
+                    For our Ugandan members, Nexahela supports MTN Mobile Money and Airtel Money. When you reach the minimum withdrawal limit, simply click 'Withdraw' and the UGX will be sent to your mobile wallet within minutes.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button text-lg font-bold text-gray-800" onclick="toggleFaq(this)">
+                    <span>Is Nexahela Agencies legit in Ghana?</span>
+                    <i class="fas fa-plus faq-icon text-[#0e8a76]"></i>
+                </button>
+                <div class="faq-answer text-gray-600 text-sm">
+                    Nexahela is 100% legit in Ghana. It uses automated MTN MoMo and Vodafone Cash gateways. Ghanaian users earn through blogging, surveys, and the chatting module, with payments in Cedis (GHS).
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button text-lg font-bold text-gray-800" onclick="toggleFaq(this)">
+                    <span>Can I join from Malawi, Cameroon, or South Africa?</span>
+                    <i class="fas fa-plus faq-icon text-[#0e8a76]"></i>
+                </button>
+                <div class="faq-answer text-gray-600 text-sm">
+                    Yes. Nexahela is a Pan-African platform. We support local payment methods in Malawi (Airtel/TNM), Cameroon (Orange/MTN Momo), and South Africa (EFT/Bank). The platform is designed to be borderless.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function toggleFaq(button) {
+        const item = button.parentElement;
+        item.classList.toggle('active');
+        
+        // Close other items (Optional: creates a true accordion)
+        document.querySelectorAll('.faq-item').forEach(otherItem => {
+            if (otherItem !== item) {
+                otherItem.classList.remove('active');
+            }
+        });
+    }
+</script>
+
 <a href="https://wa.me/254762461660?text=Hello%2C%20how%20can%20I%20Join%20Nexahela" 
    target="_blank"
    class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition-all duration-300 z-50 group flex items-center justify-center animate-bounce-subtle"
